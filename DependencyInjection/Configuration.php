@@ -351,6 +351,7 @@ class Configuration implements ConfigurationInterface
                             ->end()
                             ->scalarNode('filename_format')->defaultValue('{filename}-{date}')->end() //rotating
                             ->scalarNode('date_format')->defaultValue('Y-m-d')->end() //rotating
+                            ->scalarNode('glob_format')->defaultValue('20[0-9][0-9]-[01][0-9]-[0-3][0-9]')->end() //rotating
                             ->scalarNode('ident')->defaultFalse()->end() // syslog
                             ->scalarNode('logopts')->defaultValue(LOG_PID)->end() // syslog
                             ->scalarNode('facility')->defaultValue('user')->end() // syslog
