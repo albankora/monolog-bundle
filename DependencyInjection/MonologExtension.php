@@ -315,6 +315,7 @@ class MonologExtension extends Extension
             $definition->addMethodCall('setFilenameFormat', array(
                 $handler['filename_format'],
                 $handler['date_format'],
+                $handler['glob_format'],
             ));
             break;
 
